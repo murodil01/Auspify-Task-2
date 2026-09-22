@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Avery Morgan is a product designer and front-end developer creating thoughtful digital experiences." />
+  <title>Avery Morgan — Product designer & developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Murodil home">Mr<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Available for select projects · 2025—2026</p>
+        <h1>Designing <em>digital</em><br />things with purpose.</h1>
+        <p class="hero-intro">I’m Avery, a product designer and front-end developer turning complex ideas into clear, human experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">See selected work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay" aria-label="Portrait of Avery Morgan">
+        <div class="portrait-frame">
+          <img src="./images/user.avif" alt="Portrait of a smiling creative professional" />
+          <div class="portrait-label"><span>Currently</span><strong>Making useful<br />things feel good.</strong></div>
+        </div>
+        <span class="floating-mark mark-one">✳</span><span class="floating-mark mark-two">+</span>
+      </div>
+      <div class="scroll-note"><span class="scroll-line"></span> Scroll to explore</div>
+    </section>
+
+    <section class="work section-shell" id="work">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / Selected work</p><h2>A few things<br /><em>I've made.</em></h2></div><p class="section-note">A small selection of identity, product, and web projects built in close collaboration with good people.</p></div>
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+        <button class="filter-button active" data-filter="all" type="button">All work <span>06</span></button>
+        <button class="filter-button" data-filter="product" type="button">Product <span>03</span></button>
+        <button class="filter-button" data-filter="brand" type="button">Brand <span>02</span></button>
+        <button class="filter-button" data-filter="web" type="button">Web <span>01</span></button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-large reveal" data-category="product">
+          <a href="#contact" class="project-image image-coral"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" alt="Mobile banking app on a phone" /><span class="project-arrow">↗</span></a>
+          <div class="project-meta"><div><p class="project-type">Product · 2024</p><h3>Kindred Finance</h3></div><p class="project-description">A calmer way to understand your money.</p></div>
+        </article>
+        <article class="project-card reveal reveal-delay" data-category="brand">
+          <a href="#contact" class="project-image image-lime"><img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1000&q=85" alt="Bright creative studio workspace" /><span class="project-arrow">↗</span></a>
+          <div class="project-meta"><div><p class="project-type">Brand · 2023</p><h3>Field Notes Studio</h3></div><p class="project-description">Making space for the good work.</p></div>
+        </article>
+        <article class="project-card reveal" data-category="web">
+          <a href="#contact" class="project-image image-blue"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85" alt="Mountain lake landscape for an editorial website" /><span class="project-arrow">↗</span></a>
+          <div class="project-meta"><div><p class="project-type">Web · 2023</p><h3>North / South</h3></div><p class="project-description">A visual journal for slow travel.</p></div>
+        </article>
+        <article class="project-card project-wide reveal reveal-delay" data-category="product">
+          <a href="#contact" class="project-image image-yellow"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=85" alt="Notebook and laptop on a desk" /><span class="project-arrow">↗</span></a>
+          <div class="project-meta"><div><p class="project-type">Product · 2022</p><h3>Good Day Journal</h3></div><p class="project-description">Small rituals, beautifully organized.</p></div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>No projects in this category yet. Try another filter.</p>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="about-intro reveal"><p class="eyebrow">02 / The person behind it</p><h2>Curious by nature.<br /><em>Intentional by design.</em></h2></div>
+      <div class="about-body reveal reveal-delay"><p class="about-lead">I care about the moment a complicated thing clicks into place. My work lives at the intersection of strategy, visual design, and a little bit of code.</p><p>For the last 7 years, I’ve helped early-stage teams and thoughtful organizations find their voice, shape their products, and show up clearly in the world. I believe the best work is generous, a little unexpected, and made together.</p><a class="text-link" href="mailto:hello@averymorgan.design">More about my approach <span aria-hidden="true">↗</span></a></div>
+      <div class="skill-list reveal"><div><span>01</span><strong>Product design</strong><small>Research · UX · UI · Prototyping</small></div><div><span>02</span><strong>Visual identity</strong><small>Strategy · Art direction · Systems</small></div><div><span>03</span><strong>Front-end</strong><small>HTML · CSS · JavaScript · React</small></div></div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="contact-heading reveal"><p class="eyebrow">03 / Start a conversation</p><h2>Have a good<br /><em>idea?</em> Say hello.</h2><p>Tell me a little about what you’re working on. I’ll get back to you within a couple of days.</p><div class="contact-details"><a href="mailto:hello@averymorgan.design">hello@averymorgan.design <span>↗</span></a><span>Based in London · Working worldwide</span></div></div>
+      <form class="contact-form reveal reveal-delay" id="contact-form" novalidate>
+        <label for="name">Your name <span>*</span></label><input id="name" name="name" type="text" placeholder="Jane Smith" required />
+        <label for="email">Email address <span>*</span></label><input id="email" name="email" type="email" placeholder="jane@company.com" required />
+        <label for="message">Tell me about it <span>*</span></label><textarea id="message" name="message" rows="4" placeholder="A few words about your project..." required></textarea>
+        <button class="button button-primary submit-button" type="submit">Send inquiry <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer section-shell"><a class="brand" href="#top">Mr<span>.</span></a><p>© 2026 Murodil. Made with care.</p><a class="back-top" href="#top">Back to top <span>↑</span></a></footer>
+</body>
+</html>
